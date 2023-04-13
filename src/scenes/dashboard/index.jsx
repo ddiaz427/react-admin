@@ -1,12 +1,16 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Header from '../../components/Header'
+import { Box } from '@mui/material'
 
-const Dashboard = props => {
+const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <Box m="20px">
+      <Box display="flex" justifyContent="space-between" alignItems="ccenter">
+        <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+      </Box>
+    </Box>
   )
 }
 
-Dashboard.propTypes = {}
 
 export default Dashboard
